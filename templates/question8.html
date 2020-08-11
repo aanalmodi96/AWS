@@ -1,0 +1,41 @@
+<html>
+<body>
+<title>AWS</title>
+<h1>Aanal Modi</h1>
+
+
+<br>
+Centroid Distances: ({{ci}})
+
+<br>
+<br>
+
+Total: ({{totalPoints}})
+
+<div>
+	<table id="table">
+		{% if ci|length > 0 %}
+            <p>{{ci|length}} records</p>
+            <tr>
+                <th>Centroid 1</th>
+                <th>Centroid 2</th>
+                <th>Distance</th>
+
+            </tr>
+
+            {% for i in ci %}
+
+                <tr>
+                    <td>Point: {{ci[i]}}</td>
+                </tr>
+
+            {% endfor %}
+        {% else %}
+            <p>No records found</p>
+        {% endif %}
+	</table>
+</div>
+
+
+</body>
+</html>

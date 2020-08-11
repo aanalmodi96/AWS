@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aanal</title>
+</head>
+<body>
+<form name ="form1" action="kmeansClustering" method ="post">
+    <h1>Aanal Modi</h1>
+    
+    Enter No of Clusters <input type="number" name="cluster">
+    Enter Col1 <input type="text" name = "col1">
+    Enter Col2 <input type="text" name = "col2">
+    <input type="submit" name="show Clusters">
+</form>
+
+<form name="form2" action="DistanceCentroidPoints" method ="get">
+    Enter No of Clusters <input type="number" name="numberOfClusters">
+    Enter Col1 <input type="text" name = "col1">
+    Enter Col2 <input type="text" name = "col2">
+    <input type="submit" name="show Clusters">
+</form>
+
+
+<form action="/question8" method="get">
+     QUESTION 8 <br>
+        Enter Cloumn 1<input type="text" name="col1" method="get" action="/question8">
+        Enter Cloumn 2 <input type="text" name="col2" method="get" action="/question8">
+        Enter Number Of Clusters <input type="text" name="numberOfClusters" method="get" action="/question8">
+        <!--Enter Year<input type="text" name="year" method="get" action="/search">-->
+        <input type="submit" value="Search">
+ </form>
+
+</body>
+
+</html>
